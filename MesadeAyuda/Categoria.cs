@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    public class Categoria : Subcategoria /*Agregación*/
+    public class Categoria : SubCategoria/*Agregación*/
     {
         private int Id;
         private string NombreCategoria;

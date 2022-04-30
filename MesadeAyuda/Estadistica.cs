@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    public class Prioridad
+    public class Estadistica
     {
         private int Id;
-        public string NombrePrioridad;
+        public string NombreEstadistica;
+        public Array Ticket;
+        public Prioridad Prioridad;
 
-        public void CrearPrioridad()/*Método*/
+        public void CrearEstadistica()/*Método*/
         {
         }
 
-        public void ConsultarPrioridad()/*Método*/
+        public void ConsultarEstadistica()/*Método*/
         {
         }
 
