@@ -11,9 +11,10 @@ namespace MesadeAyuda
         private int Id;
         public enum TipoIdentificacion
         {
-            cc = 1,
-            ti = 2,
-            ce = 3,
+            cc,
+            ti,
+            nit,
+            ce
         }
 
         public int NumeroIdentificacion;
