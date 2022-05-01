@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    internal class Ticket
+    public class Ticket
     {
+        
+
     }
 }

@@ -9,7 +9,8 @@ namespace MesadeAyuda
     public class Prioridad
     {
         private int Id;
-        public string NombrePrioridad;
+        private string NombrePrioridad;
+
 
         public void CrearPrioridad()/*Método*/
         {

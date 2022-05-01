@@ -6,26 +6,9 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    public class SubCategoria : Categoria /*Composición*/
+    public class SubCategoria
     {
 
-        private int IdSubCategoria;
-        private string NombreSubCategoria;
-        public Categoria Categoria;
-
-        public void CrearSubCategoria()/*Método*/
-        {
-        }
-
-        public void ConsultarSubCategoria()/*Método*/
-        {
-        }
-
-        public void ActualizarSubCategoria()/*Método*/
-        {
-        }
-    }
-}
-{
+        
     }
 }

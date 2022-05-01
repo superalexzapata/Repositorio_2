@@ -14,6 +14,11 @@ namespace MesadeAyuda
         public Persona Persona;
         public Ubicacion Ubicacion;
 
+        public Usuario(Ubicacion ubicacion) /*Composición*/
+        {
+            this.Ubicacion = ubicacion;
+        }
+
         public void CrearUsuario()/*Método*/
         { 
         }

@@ -9,7 +9,13 @@ namespace MesadeAyuda
     public class Persona
     {
         private int Id;
-        public enum TipoIdentificacion;
+        public enum TipoIdentificacion
+        {
+            cc = 1,
+            ti = 2,
+            ce = 3,
+        }
+
         public int NumeroIdentificacion;
         public string Nombre;
         public int Telefono;
@@ -17,6 +23,12 @@ namespace MesadeAyuda
         private int Edad;
         private string Sexo;
         private string Email;
+
+        private Ticket ticket;
+            public Persona() /*Agregación*/
+            {
+                ticket = new Ticket();
+            }
 
         public void RegistrarPersona()/*Método*/
         { 

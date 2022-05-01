@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    public class Categoria : SubCategoria/*Agregación*/
+    public class Categoria
     {
         private int Id;
         private string NombreCategoria;
-
+        
+                
         public void CrearCategoria()/*Método*/
         {
         }
