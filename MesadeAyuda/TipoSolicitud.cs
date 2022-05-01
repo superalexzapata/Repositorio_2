@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MesadeAyuda
 {
-    private class TipoSolicitud: Ticket /*Composición*/
+    public  class TipoSolicitud : Ticket /*Composición*/
     {
         private int Id;
         public string NombreSolicitud;
