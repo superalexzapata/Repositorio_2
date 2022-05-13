@@ -7,6 +7,9 @@ namespace MesadeAyuda // Note: actual namespace depends on the project name.
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Bienvenido a la Mesa de Ayuda");
+            Console.WriteLine("Por favor aporte la siguiente información...");
+
 
         }
     }
