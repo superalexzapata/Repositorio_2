@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
-    public class Tecnico:Persona /*Herencia*/
+    public class Tecnico : Persona /*Herencia*/
     {
         public string NombreTecnico;
         public GrupoSoporte GrupoSoporte;

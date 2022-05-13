@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
     public class GrupoSoporte
     {
         public int Id;
         public string LiderGrupo;
-        
-        public CrearGrupoSoporte()/*Método*/
+
+        public void CrearGrupoSoporte()/*Método*/
         {
         }
 
-        public ConsultarGrupoSoporte()/*Método*/
+        public void ConsultarGrupoSoporte()/*Método*/
         {
         }
 
-        public ActualizarGrupoSoporte()/*Método*/
+        public void ActualizarGrupoSoporte()/*Método*/
         {
         }
     }

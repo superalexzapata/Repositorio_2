@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
     public class Persona
     {
-        private int Id;
+        private int Id = 0;
         public enum TipoIdentificacion
         {
             cc,
@@ -22,28 +16,34 @@ namespace MesadeAyuda
         public int Telefono;
         private string Direccion;
         private int Edad;
-        private string Sexo;
+        private enum Sexo
+        {
+            m,
+            f
+        }
         private string Email;
 
         private Ticket ticket;
-            public Persona() /*Agregación*/
-            {
-                ticket = new Ticket();
-            }
+        public Persona() /*Agregación*/
+        {
+            ticket = new Ticket();
+        }
 
         public void RegistrarPersona()/*Método*/
-        { 
+        {
+            
+
         }
 
         public void ConsultarPersona()/*Método*/
-        { 
+        {
         }
 
         public void Actualizar()/*Método*/
-        { 
+        {
         }
         public void ActivarDesactivar() /*Método*/
-        { 
+        {
         }
     }
 }

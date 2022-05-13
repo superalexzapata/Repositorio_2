@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
     public class SubcategoriaArchivo
     {
-        public Subcategoria[] Subcategoria;
+        public SubcategoriaArchivo[] Subcategoria;
         void GenerarTXT()
         {
             string rutaCompleta = @"Subcategorias.csv";

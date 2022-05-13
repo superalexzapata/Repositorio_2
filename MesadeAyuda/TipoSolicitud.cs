@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
-    public  class TipoSolicitud : Ticket /*Composición*/
+    public class TipoSolicitud : Ticket /*Composición*/
     {
         private int Id;
         public string NombreSolicitud;
-                
+
         public void CrearTipo()/*Método*/
         {
         }
