@@ -6,11 +6,11 @@
         {
 
             Console.WriteLine("Bienvenido a la Mesa de Ayuda");
-            Console.WriteLine("Por favor aporte la siguiente información...");
+            Console.Read();
            
-            Usuario usuario = new Usuario();
-            usuario.CrearUsuario();
-
+            Persona persona = new Persona();
+            persona.RegistrarPersona();
+            
         }
 
 

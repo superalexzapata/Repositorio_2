@@ -13,65 +13,44 @@
             this.Ubicacion = ubicacion;
         }
 
+        /*public override string CrearUsuario()
+        {
+        
+        public void RegistrarPersona()
+        {
+            for (int i = 0; i<Id; i++)
+            {
+                Id = i;
+            }
+
+            Direccion = "Calle 1";
+            Edad = 21;
+            var sexo = Sexo.m;
+            Email = "jperez@abc.com";
+
+            
+
+            Usuario usuario = Usuario();
+            usuario.CrearUsuario();
+           
+
+        }
+
+        }*/
+
         public void CrearUsuario()/*Método*/
         {
-
-            /*for (int i = 0; i > Id; i++) 
-            {
-
-            }*/
+            /*recibo las 5 variables*/
 
 
-            Console.WriteLine("Digite el tipo de identificación (cc - ti - nit - ce): ");
-            Persona.TipoIdentificacion = Console.ReadLine();
-
-            if (Persona.TipoIdentificacion == TipoIdentificacion.cc)
-            {
-                Persona.TipoIdentificacion = Console.ReadLine();
-            }
-            else if (Persona.TipoIdentificacion == TipoIdentificacion.ti)
-            {
-                Persona.TipoIdentificacion = Console.ReadLine();
-            }
-            else if (Persona.TipoIdentificacion == TipoIdentificacion.nit)
-            {
-                Persona.TipoIdentificacion = Console.ReadLine();
-            }
-            else if (Persona.TipoIdentificacion == TipoIdentificacion.ce)
-            {
-                Persona.TipoIdentificacion = Console.ReadLine();
-            }
-
-
-            Console.WriteLine("Digite su número de indentificación: ");
-            NumeroIdentificacion = Console.ReadLine();
-
-            Console.WriteLine("Digite su nombre: ");
-            Nombre = Console.ReadLine();
-
-            Console.WriteLine("Digite su dirección: ");
-            Direccion = Console.ReadLine();
-
-            Console.WriteLine("Digite su teléfono: ");
-            Telefono = Console.ReadLine();
-
-            Console.WriteLine("Digite su edad: ");
-            Edad = Console.ReadLine();
-
-            Console.WriteLine("Cuál es su sexo (M - F): ");
-            if (Sexo == Sexo.m)
-            {
-                Sexo = Sexo.m;
-            }
-            else if (Sexo == Sexo.f)
-            {
-                Sexo = Sexo.f;
-            }
-
-            Console.WriteLine("Digite su correo electrónico: ");
-            Email = Console.ReadLine();
-
-            Persona.GenerarTXT();
+            var identificacion = Persona.TipoIdentificacion.cc;
+            Persona.NumeroIdentificacion = 1234;
+            Persona.Nombre = "Juan Perez";
+            Persona.Telefono = 8840000;
+            
+            /*me llevo 9 variables para la clase que genera el archivo*/
+            UsuarioArchivo creador = new UsuarioArchivo();
+            creador.GenerarTXT();
         }
 
         public void ConsultarUsuario()/*Método*/
