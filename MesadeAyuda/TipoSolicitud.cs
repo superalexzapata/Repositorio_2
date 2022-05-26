@@ -1,9 +1,12 @@
 ﻿namespace MesadeAyuda
 {
-    public class TipoSolicitud : Ticket /*Composición*/
+    public class TipoSolicitud 
     {
         private int Id;
         public string NombreSolicitud;
+        
+
+       
 
         public void CrearTipo()/*Método*/
         {

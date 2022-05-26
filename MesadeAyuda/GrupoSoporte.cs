@@ -4,6 +4,7 @@
     {
         public int Id;
         public string LiderGrupo;
+        public string GrupoSop;
 
         public void CrearGrupoSoporte()/*Método*/
         {

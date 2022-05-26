@@ -3,7 +3,7 @@
     public class Ubicacion
     {
         private int Id;
-        public string Nombre;
+        public string NombreUbicacion;
 
     }
 }

@@ -3,8 +3,8 @@
     public class Ticket
     {
         private int Id;
-        private string Titulo;
-        private string Descripcion;
+        private string TituloFalla;
+        private string DescripcionProblema;
         private string Problema;
         public Categoria Categoria;
         public TipoSolicitud TipoSolicitud;
@@ -12,40 +12,18 @@
         public Prioridad Prioridad;
         public Bitacora Bitacora;
         public Usuario Usuario;
+        public Tecnico Tecnico;
         public GrupoSoporte GrupoSoporte;
 
-        public Ticket(Categoria categoria) /*Constructor*/
+        pegue aquí
+
+        public void CrearTicket(int ticket, string tituloFalla, string descripcion) 
         {
-            this.Categoria = categoria; /*Composición*/
-        }
-        public Ticket(TipoSolicitud tipoSolicitud) /*Constructor*/
-        {
-            this.TipoSolicitud = tipoSolicitud; /*Composición*/
-        }
-        public Ticket(Estadistica estadistica) /*Constructor*/
-        {
-            this.Estadistica = estadistica; /*Composición*/
-        }
-        public Ticket(Prioridad prioridad) /*Constructor*/
-        {
-            this.Prioridad = prioridad; /*Composición*/
-        }
-        public Ticket(Bitacora bitacora) /*Constructor*/
-        {
-            this.Bitacora = bitacora; /*Composición*/
-        }
-        public Ticket(Usuario usuario) /*Constructor*/
-        {
-            this.Usuario = usuario; /*Composición*/
-        }
-        public Ticket(GrupoSoporte grupoSoporte) /*Constructor*/
-        {
-            this.GrupoSoporte = grupoSoporte; /*Composición*/
+            Id = ticket;
+            TituloFalla = tituloFalla;
+            DescripcionProblema = descripcion;
         }
 
-        public Ticket()
-        {
-        }
     }
 
 }

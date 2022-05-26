@@ -3,7 +3,7 @@
     public class Categoria
     {
         private int Id;
-        private string NombreCategoria;
+        public string NombreCategoria;
 
 
         public void CrearCategoria()/*Método*/

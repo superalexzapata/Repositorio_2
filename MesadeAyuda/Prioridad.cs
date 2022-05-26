@@ -3,7 +3,7 @@
     public class Prioridad
     {
         private int Id;
-        private string NombrePrioridad;
+        public string NombrePrioridad;
 
 
         public void CrearPrioridad()/*Método*/

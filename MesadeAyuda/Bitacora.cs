@@ -4,6 +4,7 @@
     {
         private int Id;
         private int IdTicket;
+        public string NombreBitacora;
 
         public void CrearBitacora()/*Método*/
         {

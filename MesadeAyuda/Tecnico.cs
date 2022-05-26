@@ -4,10 +4,12 @@
     {
         public string NombreTecnico;
         public GrupoSoporte GrupoSoporte;
+        internal string Password;
 
-        public Tecnico(GrupoSoporte grupoSoporte) /*Constructor*/
+        pegue aquí
+
+        public Tecnico()
         {
-            this.GrupoSoporte = grupoSoporte; /*Composición*/
         }
 
         public void CrearTecnico()/*Método*/
