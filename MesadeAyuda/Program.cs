@@ -70,7 +70,7 @@
 
          #region Tecnicos
             
-            pegue Código técnicos
+            pegue aquí el Código técnicos
 
          #endregion
 
