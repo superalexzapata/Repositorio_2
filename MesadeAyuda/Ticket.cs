@@ -15,8 +15,8 @@
         public Tecnico Tecnico;
         public GrupoSoporte GrupoSoporte;
 
+        public int Id4 { get => Id; set => Id = value; }
         
-
         public Ticket(GrupoSoporte gpoSop3) /*Constructor*/
         {
             this.GrupoSoporte = gpoSop3; /*Composición*/

@@ -15,12 +15,11 @@ namespace MesadeAyuda
             // Build the users string.
             foreach (Ticket unTicket in listaTickets)
             {
-                //unaCadenadeTickets.Append(unTicket.Id);
-                //unaCadenadeTickets.Append(";");
+                unaCadenadeTickets.Append(unTicket.Id4 + ") ");
                 unaCadenadeTickets.Append(unTicket.TituloFalla);
-                unaCadenadeTickets.Append(";");
+                unaCadenadeTickets.Append("; ");
                 unaCadenadeTickets.Append(unTicket.DescripcionProblema);
-                unaCadenadeTickets.Append(";");
+                unaCadenadeTickets.Append("; ");
                 /*unaCadenadeTickets.Append(unTicket.Categoria.NombreCategoria);
                 unaCadenadeTickets.Append(";");
                 unaCadenadeTickets.Append(unTicket.TipoSolicitud.NombreSolicitud);
