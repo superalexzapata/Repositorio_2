@@ -18,27 +18,27 @@ namespace MesadeAyuda
                 //unaCadenadeUsuarios.Append(unUsuario.id);
                 //unaCadenadeUsuarios.Append(";");
                 unaCadenadeUsuarios.Append(unUsuario.TipoIdentificacion);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; No de Documento: ");
                 unaCadenadeUsuarios.Append(unUsuario.NumeroIdentificacion);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Nombre: ");
                 unaCadenadeUsuarios.Append(unUsuario.Nombre);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Dirección: ");
                 unaCadenadeUsuarios.Append(unUsuario.Direccion);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Edad: ");
                 unaCadenadeUsuarios.Append(unUsuario.Edad);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Estado: ");
                 unaCadenadeUsuarios.Append(unUsuario.EsActivo);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; No Telefonico: ");
                 unaCadenadeUsuarios.Append(unUsuario.Telefono);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Correo: ");
                 unaCadenadeUsuarios.Append(unUsuario.Email);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Sexo: ");
                 unaCadenadeUsuarios.Append(unUsuario.Sexo);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Contraseña: ");
                 unaCadenadeUsuarios.Append(unUsuario.Password);
-                unaCadenadeUsuarios.Append("; ");
+                unaCadenadeUsuarios.Append("; Ubicación a la que pertenece: ");
                 unaCadenadeUsuarios.Append(unUsuario.UbicacionUsuario.NombreUbicacion);
-                unaCadenadeUsuarios.Append("\n");
+                //unaCadenadeUsuarios.Append("\n");
 
             }
 

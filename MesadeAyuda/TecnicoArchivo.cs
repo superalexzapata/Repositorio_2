@@ -16,27 +16,27 @@ namespace MesadeAyuda
             foreach (Tecnico unTecnico in listaTecnicos)
             {
                 unaCadenadeTecnicos.Append(unTecnico.TipoIdentificacion);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; No de Documento: ");
                 unaCadenadeTecnicos.Append(unTecnico.NumeroIdentificacion);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Nombre: ");
                 unaCadenadeTecnicos.Append(unTecnico.Nombre);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Dirección: ");
                 unaCadenadeTecnicos.Append(unTecnico.Direccion);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Edad: ");
                 unaCadenadeTecnicos.Append(unTecnico.Edad);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Estado: ");
                 unaCadenadeTecnicos.Append(unTecnico.EsActivo);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; No Telefonico: ");
                 unaCadenadeTecnicos.Append(unTecnico.Telefono);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Correo: ");
                 unaCadenadeTecnicos.Append(unTecnico.Email);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Sexo: ");
                 unaCadenadeTecnicos.Append(unTecnico.Sexo);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; Contraseña: ");
                 unaCadenadeTecnicos.Append(unTecnico.Password);
-                unaCadenadeTecnicos.Append("; ");
+                unaCadenadeTecnicos.Append("; El Grupo de Soporte es: ");
                 unaCadenadeTecnicos.Append(unTecnico.GrupoSoporte.GrupoSop);
-                unaCadenadeTecnicos.Append("\n");
+                //unaCadenadeTecnicos.Append("\n");
 
             }
 

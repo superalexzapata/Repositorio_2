@@ -35,7 +35,7 @@ namespace MesadeAyuda
                 unaCadenadeTickets.Append(unTicket.Tecnico.Nombre);
                 unaCadenadeTickets.Append(";");
                 unaCadenadeTickets.Append(unTicket.GrupoSoporte.GrupoSop);*/
-                unaCadenadeTickets.Append("\n");
+                //unaCadenadeTickets.Append("\n");
 
             }
 
