@@ -15,8 +15,7 @@ namespace MesadeAyuda
             // Build the users string.
             foreach (TipoSolicitud unTipo in listaTipoSol)
             {
-                //unaCadenadeTipos.Append(unTipo.Id);
-                //unaCadenadeTipos.Append(";");
+                unaCadenadeTipos.Append(unTipo.Id5 + ") ");
                 unaCadenadeTipos.Append(unTipo.NombreSolicitud);
                 unaCadenadeTipos.Append(";");
                 unaCadenadeTipos.Append("\n");

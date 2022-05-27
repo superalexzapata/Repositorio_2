@@ -5,8 +5,7 @@
         private int Id;
         public string NombreSolicitud;
 
-
-
+        public int Id5 { get => Id; set => Id = value; }
 
         public void CrearTipo(int tipoSolicitud)/*Método*/
         {
