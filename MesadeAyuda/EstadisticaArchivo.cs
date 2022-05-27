@@ -15,7 +15,7 @@ namespace MesadeAyuda
             // Build the users string.
             foreach (Estadistica unEstad in listaEstadisticas)
             {
-                //unaCadenadeEstadisticas.Append(unTipo.Id);
+                unaCadenadeEstadisticas.Append(unEstad.Id3 + ") ");
                 //unaCadenadeEstadisticas.Append(";");
                 unaCadenadeEstadisticas.Append(unEstad.NombreEstadistica);
                 unaCadenadeEstadisticas.Append(";");
