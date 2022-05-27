@@ -2,17 +2,27 @@
 {
     internal class BitacoraArchivo
     {
-        public Bitacora[] Bitacora;
-        void GenerarTXT()
+        public List<Bitacora> listaBitacoras;
+        public void GenerarTxtBitacoras()
         {
-            string rutaCompleta = @"Bitacoras.csv";
-            string texto = string.Join(",", Bitacora.Select(n => n.ToString()).ToArray());
+            string rutaCompleta = @"7Bitacoras.csv";
+
+            var unaCadenadeBitacoras = new StringBuilder();
+
+            // Build the users string.
+            foreach (Bitacora unBitac in listaBitacoras)
+            {
+                //unaCadenadeBitacoras.Append(unBitac.Id);
+                //unaCadenadeBitacoras.Append(";");
+                unaCadenadeBitacoras.Append(unBitac.NombreBitacora);
+                unaCadenadeBitacoras.Append(";");
+                unaCadenadeBitacoras.Append("\n");
+
+            }
+
             using (StreamWriter mylogs = File.AppendText(rutaCompleta))
             {
-                DateTime dateTime = new DateTime();
-                dateTime = DateTime.Now;
-                string strDate = Convert.ToDateTime(dateTime).ToString("yyMMdd");
-                mylogs.WriteLine(texto + strDate);
+                mylogs.WriteLine(unaCadenadeBitacoras.ToString());
                 mylogs.Close();
             }
         }

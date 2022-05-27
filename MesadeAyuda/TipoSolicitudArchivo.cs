@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<TipoSolicitud> listaTipoSol;
         public void GenerarTxtTTiposol()
         {
-            string rutaCompleta = @"6Tipo_Solicitudes.csv";
+            string rutaCompleta = @"6-Tipo_Solicitudes.csv";
 
             var unaCadenadeTipos = new StringBuilder();
 
