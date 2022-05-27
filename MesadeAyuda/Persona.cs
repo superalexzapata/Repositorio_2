@@ -2,51 +2,40 @@
 {
     public class Persona
     {
-        public List<Usuario> listaUsuarios;
-        public void GenerarTxtUsuarios()
+        private int Id;
+        public string TipoIdentificacion;
+        public int NumeroIdentificacion;
+        public string Nombre;
+        public int Telefono;
+        public string Direccion;
+        public int Edad;
+        public string Sexo;
+        public string Email;
+        internal bool EsActivo;
+        internal string Password;
+        public Ticket ticket;
+
+        public Persona() /*Agregación*/
         {
-            string rutaCompleta = @"Usuarios.csv";
+            ticket = new Ticket();
+        }
 
-            var unaCadenadeUsuarios = new StringBuilder();
-
-            // Build the users string.
-            foreach (Usuario unUsuario in listaUsuarios)
-            {
-                //unaCadenadeUsuarios.Append(unUsuario.id);
-                //unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.TipoIdentificacion);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.NumeroIdentificacion);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Nombre);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Direccion);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Edad);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.EsActivo);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Telefono);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Email);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Sexo);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.Password);
-                unaCadenadeUsuarios.Append(";");
-                unaCadenadeUsuarios.Append(unUsuario.UbicacionUsuario.NombreUbicacion);
-                unaCadenadeUsuarios.Append("\n");
-
-            }
-
-            using (StreamWriter mylogs = File.AppendText(rutaCompleta))
-            {
-                mylogs.WriteLine(unaCadenadeUsuarios.ToString());
-                mylogs.Close();
-            }
+        public void RegistrarPersona(int id)/*Método*/
+        {
+            Id = id;
+        }
 
 
 
+        public void ConsultarPersona()/*Método*/
+        {
+        }
+
+        public void Actualizar()/*Método*/
+        {
+        }
+        public void ActivarDesactivar() /*Método*/
+        {
         }
     }
 }
