@@ -6,8 +6,9 @@
         public string NombreCategoria;
 
 
-        public void CrearCategoria()/*Método*/
+        public void CrearCategoria(int categoria)/*Método*/
         {
+            Id = categoria;
         }
 
         public void ConsultarCategoria()/*Método*/

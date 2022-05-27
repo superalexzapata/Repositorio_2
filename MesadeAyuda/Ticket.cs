@@ -4,7 +4,7 @@
     {
         private int Id;
         public string TituloFalla;
-        private string DescripcionProblema;
+        public string DescripcionProblema;
         private string Problema;
         public Categoria Categoria;
         public TipoSolicitud TipoSolicitud;
@@ -61,11 +61,11 @@
         {
         }
 
-        public void CrearTicket(int ticket, string tituloFalla, string descripcion) 
+        public void CrearTicket(int ticket) 
         {
             Id = ticket;
-            TituloFalla = tituloFalla;
-            DescripcionProblema = descripcion;
+            
+            
         }
 
     }

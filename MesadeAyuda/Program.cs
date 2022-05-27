@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
 
-            Console.WriteLine("Bienvenido a la Mesa de Ayuda");
+            Console.WriteLine("Bienvenido a la Mesa de Ayuda\n\n");
 
          #region Usuarios
             #region Primer Usuario
@@ -63,12 +63,12 @@
             List<Usuario> milistaUsuarios = new List<Usuario>();
             milistaUsuarios.Add(usuario1);
             milistaUsuarios.Add(usuario2);
-            //milistaUsuarios.Add(unaPersona);
+            //milistaUsuarios.Add((Usuario)unaPersona);
 
             UsuarioArchivo creadorUsuarios = new UsuarioArchivo();
             creadorUsuarios.listaUsuarios = milistaUsuarios;
             creadorUsuarios.GenerarTxtUsuarios();
-            Console.WriteLine("Listo el archivo Usuarios.csv\nGracias!!!");
+            Console.WriteLine("Listo el archivo Usuarios.csv!!!\n");
          #endregion
 
          #region Tecnicos
@@ -115,7 +115,7 @@
             TecnicoArchivo creadorTecnicos = new TecnicoArchivo();
             creadorTecnicos.listaTecnicos = milistaTecnicos;
             creadorTecnicos.GenerarTxtTecnicos();
-            Console.WriteLine("Listo el archivo Tecnicos.csv\nGracias!!!");
+            Console.WriteLine("Listo el archivo Tecnicos.csv!!!\n");
          #endregion
 
          #region Tickets
@@ -123,8 +123,9 @@
             GrupoSoporte gpoSop3 = new GrupoSoporte();
             gpoSop3.GrupoSop = "Software";
             Ticket ticket1 = new Ticket(gpoSop3);
-            //ticket1.CrearTicket(1, "Daño en Office", "No me abre Word");//Asignación de id, Titulo falla y Descripcion
+            //ticket1.CrearTicket(1);//Asignación de id
             ticket1.TituloFalla = "Daño en Office";
+            ticket1.DescripcionProblema = "No me abre Word";
 
             Categoria tipoCateg = new Categoria();
             tipoCateg.NombreCategoria= "Software" ;
@@ -172,10 +173,62 @@
             TicketArchivo creadorTickets = new TicketArchivo();
             creadorTickets.listaTickets = milistaTickets;
             creadorTickets.GenerarTxtTickets();
-            Console.WriteLine("Listo el archivo Tickets.csv\nGracias!!!");
-            Console.Read();
+            Console.WriteLine("Listo el archivo Tickets.csv!!!\n");
+            
+            #endregion
+
+
+         #region Tipo Solicitud
+            
+            TipoSolicitud tiposol1 = new TipoSolicitud();
+            tiposol1.NombreSolicitud = "Solucinar problema de Software";
+            tiposol1.CrearTipo(1);//Asignacion de ID
+
+            List<TipoSolicitud> milistaSolicitudes = new List<TipoSolicitud>();
+            milistaSolicitudes.Add(tiposol1);
+            
+
+            TipoSolicitudArchivo creadorTipoSolicitudes = new TipoSolicitudArchivo();
+            creadorTipoSolicitudes.listaTipoSol = milistaSolicitudes;
+            creadorTipoSolicitudes.GenerarTxtTTiposol();
+            Console.WriteLine("Listo el archivo Tipo de Solicitudes.csv!!!\n");
          #endregion
 
+
+         #region Categoria 
+
+            Categoria categ1 = new Categoria();
+            categ1.NombreCategoria = "Software";
+            categ1.CrearCategoria(1);//Asignacion de ID
+
+            List<Categoria> milistaCategorias = new List<Categoria>();
+            milistaCategorias.Add(categ1);
+
+
+            CategoriaArchivo creadorCategorias = new CategoriaArchivo();
+            creadorCategorias.listaCategorias = milistaCategorias;
+            creadorCategorias.GenerarTxtCategorias();
+            Console.WriteLine("Listo el archivo Categorias.csv!!!\n");
+            Console.Read();
+            #endregion
+
+
+         #region Estadistica
+
+            /*Categoria categ1 = new Categoria();
+            categ1.NombreCategoria = "Software";
+            categ1.CrearCategoria(1);//Asignacion de ID
+
+            List<Categoria> milistaCategorias = new List<Categoria>();
+            milistaCategorias.Add(categ1);
+
+
+            CategoriaArchivo creadorCategorias = new CategoriaArchivo();
+            creadorCategorias.listaCategorias = milistaCategorias;
+            creadorCategorias.GenerarTxtCategorias();
+            Console.WriteLine("Listo el archivo Categorias.csv!!!\n");
+            Console.Read();*/
+         #endregion
         }
 
 

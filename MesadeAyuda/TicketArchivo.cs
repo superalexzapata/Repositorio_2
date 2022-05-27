@@ -18,10 +18,10 @@ namespace MesadeAyuda
                 //unaCadenadeTickets.Append(unTicket.Id);
                 //unaCadenadeTickets.Append(";");
                 unaCadenadeTickets.Append(unTicket.TituloFalla);
-                //unaCadenadeTickets.Append(";");
-                //unaCadenadeTickets.Append(unTicket.DescripcionProblema);
-                //unaCadenadeTickets.Append(";");
-                unaCadenadeTickets.Append(unTicket.Categoria.NombreCategoria);
+                unaCadenadeTickets.Append(";");
+                unaCadenadeTickets.Append(unTicket.DescripcionProblema);
+                unaCadenadeTickets.Append(";");
+                /*unaCadenadeTickets.Append(unTicket.Categoria.NombreCategoria);
                 unaCadenadeTickets.Append(";");
                 unaCadenadeTickets.Append(unTicket.TipoSolicitud.NombreSolicitud);
                 unaCadenadeTickets.Append(";");
@@ -35,7 +35,7 @@ namespace MesadeAyuda
                 unaCadenadeTickets.Append(";");
                 unaCadenadeTickets.Append(unTicket.Tecnico.Nombre);
                 unaCadenadeTickets.Append(";");
-                unaCadenadeTickets.Append(unTicket.GrupoSoporte.GrupoSop);
+                unaCadenadeTickets.Append(unTicket.GrupoSoporte.GrupoSop);*/
                 unaCadenadeTickets.Append("\n");
 
             }

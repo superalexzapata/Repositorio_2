@@ -1,18 +1,31 @@
-﻿namespace MesadeAyuda
+﻿using System.Collections;
+using System.Text;
+
+namespace MesadeAyuda
 {
     internal class CategoriaArchivo
     {
-        public Categoria[] Categoria;
-        void GenerarTXT()
+        public List<Categoria> listaCategorias;
+        public void GenerarTxtCategorias()
         {
             string rutaCompleta = @"Categorias.csv";
-            string texto = string.Join(",", Categoria.Select(n => n.ToString()).ToArray());
+
+            var unaCadenadeCategorias = new StringBuilder();
+
+            // Build the users string.
+            foreach (Categoria unCateg in listaCategorias)
+            {
+                //unaCadenadeCategorias.Append(unTipo.Id);
+                //unaCadenadeCategorias.Append(";");
+                unaCadenadeCategorias.Append(unCateg.NombreCategoria);
+                unaCadenadeCategorias.Append(";");
+                unaCadenadeCategorias.Append("\n");
+
+            }
+
             using (StreamWriter mylogs = File.AppendText(rutaCompleta))
             {
-                DateTime dateTime = new DateTime();
-                dateTime = DateTime.Now;
-                string strDate = Convert.ToDateTime(dateTime).ToString("yyMMdd");
-                mylogs.WriteLine(texto + strDate);
+                mylogs.WriteLine(unaCadenadeCategorias.ToString());
                 mylogs.Close();
             }
         }
