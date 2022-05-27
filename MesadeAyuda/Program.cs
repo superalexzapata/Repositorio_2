@@ -239,7 +239,7 @@
 
 
             BitacoraArchivo creadorBitacoras = new BitacoraArchivo();
-            creadorBitacoras.listaBitacoras= milistaBitacoras;
+            creadorBitacoras.listaBitacoras = milistaBitacoras;
             creadorBitacoras.GenerarTxtBitacoras();
             Console.WriteLine("Listo el archivo Bitacoras.csv!!!\n");
             Console.Read();
