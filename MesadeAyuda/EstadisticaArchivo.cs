@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<Estadistica> listaEstadisticas;
         public void GenerarTxtEstadisticas()
         {
-            string rutaCompleta = @"5Estadisticas.csv";
+            string rutaCompleta = @"5-Estadisticas.csv";
 
             var unaCadenadeEstadisticas = new StringBuilder();
 
