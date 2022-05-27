@@ -5,6 +5,7 @@
         private int Id;
         public string NombreCategoria;
 
+        public int Id2 { get => Id; set => Id = value; }
 
         public void CrearCategoria(int categoria)/*Método*/
         {

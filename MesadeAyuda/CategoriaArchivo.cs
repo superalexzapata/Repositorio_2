@@ -15,7 +15,7 @@ namespace MesadeAyuda
             // Build the users string.
             foreach (Categoria unCateg in listaCategorias)
             {
-                //unaCadenadeCategorias.Append(unTipo.Id);
+                unaCadenadeCategorias.Append(unCateg.Id2 +  ") ");
                 //unaCadenadeCategorias.Append(";");
                 unaCadenadeCategorias.Append(unCateg.NombreCategoria);
                 unaCadenadeCategorias.Append(";");
