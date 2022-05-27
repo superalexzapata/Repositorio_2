@@ -13,11 +13,11 @@ namespace MesadeAyuda
             var unaCadenadeBitacoras = new StringBuilder();
 
             // Build the users string.
-            foreach (Bitacora unBitac in listaBitacoras)
+            foreach (Bitacora unaBitac in listaBitacoras)
             {
-                //unaCadenadeBitacoras.Append(unBitac.Id);
+                //unaCadenadeBitacoras.Append(unaBitac.Id);
                 //unaCadenadeBitacoras.Append(";");
-                unaCadenadeBitacoras.Append(unBitac.NombreBitacora);
+                unaCadenadeBitacoras.Append(unaBitac.NombreBitacora);
                 unaCadenadeBitacoras.Append(";");
                 unaCadenadeBitacoras.Append("\n");
 
