@@ -226,6 +226,22 @@
             creadorEstadistica.listaEstadisticas = milistaEstadisticas;
             creadorEstadistica.GenerarTxtEstadisticas();
             Console.WriteLine("Listo el archivo Estadisticas.csv!!!\n");
+         #endregion
+
+         #region Bitacora
+
+            Bitacora bitac1 = new Bitacora();
+            bitac1.NombreBitacora= "Registro de actividad en el ticket";
+            bitac1.CrearBitacora(1);//Asignacion de ID
+
+            List<Bitacora> milistaBitacoras = new List<Bitacora>();
+            milistaBitacoras.Add(bitac1);
+
+
+            BitacoraArchivo creadorBitacoras = new BitacoraArchivo();
+            creadorBitacoras.listaBitacoras= milistaBitacoras;
+            creadorBitacoras.GenerarTxtBitacoras();
+            Console.WriteLine("Listo el archivo Bitacoras.csv!!!\n");
             Console.Read();
          #endregion
         }

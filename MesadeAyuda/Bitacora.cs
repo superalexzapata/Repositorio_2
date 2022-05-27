@@ -6,8 +6,9 @@
         private int IdTicket;
         public string NombreBitacora;
 
-        public void CrearBitacora()/*Método*/
+        public void CrearBitacora(int bitacora)/*Método*/
         {
+            Id = bitacora;
         }
 
         public void ConsultarBitacora()/*Método*/
