@@ -5,7 +5,7 @@
         public List<Bitacora> listaBitacoras;
         public void GenerarTxtBitacoras()
         {
-            string rutaCompleta = @"7Bitacoras.csv";
+            string rutaCompleta = @"7-Bitacoras.csv";
 
             var unaCadenadeBitacoras = new StringBuilder();
 
