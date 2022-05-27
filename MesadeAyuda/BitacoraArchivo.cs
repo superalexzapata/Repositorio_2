@@ -15,7 +15,8 @@ namespace MesadeAyuda
             // Build the users string.
             foreach (Bitacora unBitac in listaBitacoras)
             {
-                //unaCadenadeBitacoras.Append(unBitac.Id);
+                
+                unaCadenadeBitacoras.Append(unBitac.Id1 + "-");
                 //unaCadenadeBitacoras.Append(";");
                 unaCadenadeBitacoras.Append(unBitac.NombreBitacora);
                 unaCadenadeBitacoras.Append(";");
