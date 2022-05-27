@@ -5,7 +5,6 @@
         private int Id;
         public string TituloFalla;
         public string DescripcionProblema;
-        private string Problema;
         public Categoria Categoria;
         public TipoSolicitud TipoSolicitud;
         public Estadistica Estadistica;
@@ -64,9 +63,11 @@
         public void CrearTicket(int ticket) 
         {
             Id = ticket;
-            
-            
+
         }
+        public static void ActualizarTicket() { }
+        public static void CrearBitacora() { }
+        public static void ReasignarTicket() { }
 
     }
 

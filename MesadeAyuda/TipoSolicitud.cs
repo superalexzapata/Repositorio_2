@@ -12,11 +12,11 @@
             Id = tipoSolicitud;
         }
 
-        public void ConsultarTipo()/*Método*/
+        public static void ConsultarTipo()/*Método*/
         {
         }
 
-        public void ActualizarTipo()/*Método*/
+        public static void ActualizarTipo()/*Método*/
         {
         }
     }
