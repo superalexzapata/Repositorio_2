@@ -16,25 +16,25 @@ namespace MesadeAyuda
             foreach (Tecnico unTecnico in listaTecnicos)
             {
                 unaCadenadeTecnicos.Append(unTecnico.TipoIdentificacion);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.NumeroIdentificacion);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Nombre);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Direccion);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Edad);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.EsActivo);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Telefono);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Email);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Sexo);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.Password);
-                unaCadenadeTecnicos.Append(";");
+                unaCadenadeTecnicos.Append("; ");
                 unaCadenadeTecnicos.Append(unTecnico.GrupoSoporte.GrupoSop);
                 unaCadenadeTecnicos.Append("\n");
 
