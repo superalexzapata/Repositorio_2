@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<Ticket> listaTickets;
         public void GenerarTxtTickets()
         {
-            string rutaCompleta = @"Tickets.csv";
+            string rutaCompleta = @"3Tickets.csv";
 
             var unaCadenadeTickets = new StringBuilder();
 

@@ -209,25 +209,24 @@
             creadorCategorias.listaCategorias = milistaCategorias;
             creadorCategorias.GenerarTxtCategorias();
             Console.WriteLine("Listo el archivo Categorias.csv!!!\n");
-            Console.Read();
-            #endregion
+         #endregion
 
 
          #region Estadistica
 
-            /*Categoria categ1 = new Categoria();
-            categ1.NombreCategoria = "Software";
-            categ1.CrearCategoria(1);//Asignacion de ID
+            Estadistica estad1 = new Estadistica();
+            estad1.NombreEstadistica = "Software";
+            estad1.CrearEstadistica(1);//Asignacion de ID
 
-            List<Categoria> milistaCategorias = new List<Categoria>();
-            milistaCategorias.Add(categ1);
+            List<Estadistica> milistaEstadisticas = new List<Estadistica>();
+            milistaEstadisticas.Add(estad1);
 
 
-            CategoriaArchivo creadorCategorias = new CategoriaArchivo();
-            creadorCategorias.listaCategorias = milistaCategorias;
-            creadorCategorias.GenerarTxtCategorias();
-            Console.WriteLine("Listo el archivo Categorias.csv!!!\n");
-            Console.Read();*/
+            EstadisticaArchivo creadorEstadistica = new EstadisticaArchivo();
+            creadorEstadistica.listaEstadisticas = milistaEstadisticas;
+            creadorEstadistica.GenerarTxtEstadisticas();
+            Console.WriteLine("Listo el archivo Estadisticas.csv!!!\n");
+            Console.Read();
          #endregion
         }
 

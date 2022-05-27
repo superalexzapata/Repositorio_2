@@ -1,18 +1,16 @@
-﻿using System.Collections
-using System.Text
-
-namespace MesadeAyuda
+﻿namespace MesadeAyuda
 {
     public class TipoSolicitud 
     {
         private int Id;
         public string NombreSolicitud;
-        
 
-       
 
-        public void CrearTipo()/*Método*/
+
+
+        public void CrearTipo(int tipoSolicitud)/*Método*/
         {
+            Id = tipoSolicitud;
         }
 
         public void ConsultarTipo()/*Método*/

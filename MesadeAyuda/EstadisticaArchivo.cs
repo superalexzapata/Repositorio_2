@@ -1,18 +1,31 @@
-﻿namespace MesadeAyuda
+﻿using System.Collections;
+using System.Text;
+
+namespace MesadeAyuda
 {
     public class EstadisticaArchivo
     {
-        public Estadistica[] Estadistica;
-        void GenerarTXT()
+        public List<Estadistica> listaEstadisticas;
+        public void GenerarTxtEstadisticas()
         {
-            string rutaCompleta = @"Estadisticas.csv";
-            string texto = string.Join(",", Estadistica.Select(n => n.ToString()).ToArray());
+            string rutaCompleta = @"5Estadisticas.csv";
+
+            var unaCadenadeEstadisticas = new StringBuilder();
+
+            // Build the users string.
+            foreach (Estadistica unEstad in listaEstadisticas)
+            {
+                //unaCadenadeEstadisticas.Append(unTipo.Id);
+                //unaCadenadeEstadisticas.Append(";");
+                unaCadenadeEstadisticas.Append(unEstad.NombreEstadistica);
+                unaCadenadeEstadisticas.Append(";");
+                unaCadenadeEstadisticas.Append("\n");
+
+            }
+
             using (StreamWriter mylogs = File.AppendText(rutaCompleta))
             {
-                DateTime dateTime = new DateTime();
-                dateTime = DateTime.Now;
-                string strDate = Convert.ToDateTime(dateTime).ToString("yyMMdd");
-                mylogs.WriteLine(texto + strDate);
+                mylogs.WriteLine(unaCadenadeEstadisticas.ToString());
                 mylogs.Close();
             }
         }

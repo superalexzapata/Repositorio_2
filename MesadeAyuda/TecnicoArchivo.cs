@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<Tecnico> listaTecnicos;
         public void GenerarTxtTecnicos()
         {
-            string rutaCompleta = @"Tecnicos.csv";
+            string rutaCompleta = @"1Tecnicos.csv";
 
             var unaCadenadeTecnicos = new StringBuilder();
 

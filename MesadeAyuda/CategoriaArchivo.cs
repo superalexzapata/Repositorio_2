@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<Categoria> listaCategorias;
         public void GenerarTxtCategorias()
         {
-            string rutaCompleta = @"Categorias.csv";
+            string rutaCompleta = @"4Categorias.csv";
 
             var unaCadenadeCategorias = new StringBuilder();
 

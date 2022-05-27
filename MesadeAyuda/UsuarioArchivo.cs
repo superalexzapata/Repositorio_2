@@ -8,7 +8,7 @@ namespace MesadeAyuda
         public List<Usuario> listaUsuarios;
         public void GenerarTxtUsuarios()
         {
-            string rutaCompleta = @"Usuarios.csv";
+            string rutaCompleta = @"2Usuarios.csv";
 
             var unaCadenadeUsuarios = new StringBuilder();
 
