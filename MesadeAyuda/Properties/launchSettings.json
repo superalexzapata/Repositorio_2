@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "MesadeAyuda": {
+      "commandName": "Project",
+      "jsWebView2Debugging": true,
+      "sqlDebugging": false,
+      "remoteDebugEnabled": true,
+      "nativeDebugging": true
+    }
+  }
+}
