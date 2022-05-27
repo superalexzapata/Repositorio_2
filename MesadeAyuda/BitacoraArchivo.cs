@@ -16,7 +16,7 @@ namespace MesadeAyuda
             foreach (Bitacora unBitac in listaBitacoras)
             {
                 
-                unaCadenadeBitacoras.Append(unBitac.Id1 + "-");
+                unaCadenadeBitacoras.Append(unBitac.Id1 + ") ");
                 //unaCadenadeBitacoras.Append(";");
                 unaCadenadeBitacoras.Append(unBitac.NombreBitacora);
                 unaCadenadeBitacoras.Append(";");
