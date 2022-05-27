@@ -6,7 +6,10 @@
         public GrupoSoporte GrupoSoporte;
         internal string Password;
 
-        pegue aquí
+        public Tecnico(GrupoSoporte gpoSop1) /*Constructor*/
+        {
+            this.GrupoSoporte = gpoSop1; /*Composición*/
+        }
 
         public Tecnico()
         {

@@ -17,7 +17,7 @@ namespace MesadeAyuda
             {
                 //unaCadenadeTickets.Append(unTicket.Id);
                 //unaCadenadeTickets.Append(";");
-                //unaCadenadeTickets.Append(unTicket.TituloFalla);
+                unaCadenadeTickets.Append(unTicket.TituloFalla);
                 //unaCadenadeTickets.Append(";");
                 //unaCadenadeTickets.Append(unTicket.DescripcionProblema);
                 //unaCadenadeTickets.Append(";");
